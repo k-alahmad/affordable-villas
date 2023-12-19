@@ -15,7 +15,7 @@ const Footer = () => {
 			}}
 			className='w-full flex justify-center items-center'
 		>
-			<div className='max-w-[1920px] w-full'>
+			<div className='max-w-[1920px] w-full border-t-white border-opacity-50 border-t-2'>
 				<div className='grid md:grid-cols-3 gap-6 w-full px-[3%] py-[3%] justify-items-center  '>
 					<div className='text-xl w-full text-white flex justify-center items-center gap-x-5 '>
 						<a

@@ -35,6 +35,9 @@ const RegisterForm = () => {
 	}
 	return (
 		<div id='register' className='w-[75vw] max-w-[700px] my-12'>
+			<p className='text-secondary font-semibold text-4xl mb-4 flex justify-center items-center'>
+				For more information
+			</p>
 			<form className='flex flex-col justify-between items-stretch h-full w-full space-y-4'>
 				<CustomInput
 					icon={<MdPerson className='text-white text-med' />}

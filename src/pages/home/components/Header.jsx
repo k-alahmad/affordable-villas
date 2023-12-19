@@ -14,7 +14,7 @@ const Header = ({ selectedProject, setSelectedProject }) => {
 						className='rounded-lg h-full w-full object-cover origin-center'
 					/>
 					<div className='absolute w-full h-full bg-primary/30 rounded-lg top-0 left-0' />
-					<p className='absolute left-0 w-full top-1 p-1 text-[30px] font-bold sm:text-big lg:text-bigger text-white text-center '>
+					<p className='absolute left-0 w-full top-1 p-1 text-[30px] font-bold sm:text-big lg:text-[64px] text-white text-center '>
 						{projectsData[selectedProject].HeaderTitle[i18n.language]}
 					</p>
 					<div className='absolute w-full bottom-0 rounded-lg left-0 bg-primary flex justify-center items-center  text-[18px] font-semibold sm:text-small '>
