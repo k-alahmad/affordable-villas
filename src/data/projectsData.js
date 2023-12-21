@@ -9,25 +9,27 @@ import DubaiVideo from "../assets/videos/dubai.mp4";
 import dxb from "../assets/images/nearby/dxb.webp";
 import downtown from "../assets/images/nearby/downtown.webp";
 import marina from "../assets/images/nearby/marina.webp";
-import moe from "../assets/images/nearby/moe.webp";
+import global from "../assets/images/nearby/global.webp";
 import dwc from "../assets/images/nearby/dwc.webp";
-import jumeirah from "../assets/images/nearby/jumeirah.webp";
+import difc from "../assets/images/nearby/difc.webp";
+import img from "../assets/images/nearby/img.webp";
+import zayed from "../assets/images/nearby/zayed.webp";
 export const projectsData = [
 	{
 		id: 1,
 		ProjectName: { en: "Park Greens", ar: "بارك غرين" },
 		HeaderTitle: {
 			en: "Modern Villas that Blended Seamlessly with Nature",
-			ar: "فلل فاخرة جدا من تلال الغاف",
+			ar: "فلل فخمة تمتزج مع الطبيعة بسلاسة",
 		},
 		HeaderImage: projectOneHeader,
 		InfoTitle: {
-			en: "Discover Your Water Wanderland",
-			ar: "فلل فاخرة جدا من تلال الغاف",
+			en: "Discover Your Water Wonderland",
+			ar: "تمتع بإطلالات مائية خلابة ",
 		},
 		InfoSubTitle: {
 			en: "With beautiful layouts, state-of-the-art finishes and lush living spaces that open out into your own private garden, celebrate the effortless balance between elegance and function.",
-			ar: "استمتع بإطلالات بانورامية على بحيرة الغاف البكر بينما تنغمس في أسلوب حياة فاخر حقًا",
+			ar: "تنعم بالفخامة و الجودة مع تصميمات جميلة و تشطيبات حديثة و مساحات كبيرة مطلة على حديقتك الخاصة. ",
 		},
 		InfoData: [
 			{
@@ -48,34 +50,37 @@ export const projectsData = [
 		],
 		Nearby: [
 			{
-				Duration: "24",
-				Place: { en: "Palm Jumeirah ", ar: "" },
-				Image: jumeirah,
-			},
-			{
-				Duration: "24",
-				Place: { en: "Dubai Marina", ar: "" },
-				Image: marina,
-			},
-			{
-				Duration: "20",
-				Place: { en: "DWC Airport", ar: "" },
+				Duration: "35",
+				Place: { en: "DWC Airport", ar: "مطار آل مكتوم الدولي" },
 				Image: dwc,
 			},
 			{
-				Duration: "30",
-				Place: { en: "DXB Airport", ar: "" },
+				Duration: "24",
+				Place: {
+					en: "IMG Worlds of Adventure",
+					ar: "آي إم جي عالم من المغامرات",
+				},
+				Image: img,
+			},
+			{
+				Duration: "20",
+				Place: { en: "DIFC", ar: "مركز دبي المالي العالمي" },
+				Image: difc,
+			},
+			{
+				Duration: "25",
+				Place: { en: "DXB Airport", ar: "مطار دبي الدولي" },
 				Image: dxb,
 			},
 			{
-				Duration: "21",
-				Place: { en: "Dubai Downtown", ar: "" },
+				Duration: "30",
+				Place: { en: "Dubai Downtown", ar: "وسط دبي" },
 				Image: downtown,
 			},
 			{
 				Duration: "20",
-				Place: { en: "Mall of Emirates", ar: "" },
-				Image: moe,
+				Place: { en: "Global Village", ar: "القرية العالمية" },
+				Image: global,
 			},
 		],
 		Video: DubaiVideo,
@@ -85,16 +90,16 @@ export const projectsData = [
 		ProjectName: { en: "Reportage Village", ar: "قرية ريبورتاج" },
 		HeaderTitle: {
 			en: "Ready for a new living Experience at Reportage Village",
-			ar: "",
+			ar: "تجربة معيشة جديدة في قرية ريبورتاج",
 		},
 		HeaderImage: projectTwoHeader,
 		InfoTitle: {
 			en: " Luxury Lifestyle with Close Proximity to Most of Dubai’s",
-			ar: "عنوان المشروع الثاني",
+			ar: "نمط حياة فاخر مع سهولة وصول لجميع مناطق دبي",
 		},
 		InfoSubTitle: {
 			en: "Reportage Village is in Dubailand. which offers distinctive and contemporary highend residential townhouses, delivering the whole luxury lifestyle with close proximity to most of Dubai's attractions.   and is surrounded by parks, schools",
-			ar: "شرح مبسط عن المشروع الثاني ",
+			ar: "تقع قريب ريبورتاج في دبي لاند و التي توفر مساكن مميزة و معاصرة ونمط حياة فاخر و محاط بالحدائق و المدارس مع سهولة وصول لأهم معالم دبي ",
 		},
 		InfoData: [
 			{
@@ -115,34 +120,37 @@ export const projectsData = [
 		],
 		Nearby: [
 			{
-				Duration: "24",
-				Place: { en: "Palm Jumeirah ", ar: "" },
-				Image: jumeirah,
+				Duration: "11",
+				Place: {
+					en: "IMG Worlds of Adventure",
+					ar: "آي إم جي عالم من المغامرات",
+				},
+				Image: img,
 			},
 			{
-				Duration: "24",
-				Place: { en: "Dubai Marina", ar: "" },
+				Duration: "11",
+				Place: { en: "Zayed University", ar: "جامعة زايد" },
 				Image: marina,
 			},
 			{
 				Duration: "20",
-				Place: { en: "DWC Airport", ar: "" },
-				Image: dwc,
+				Place: { en: "DIFC", ar: "مركز دبي المالي العالمي" },
+				Image: difc,
 			},
 			{
 				Duration: "30",
-				Place: { en: "DXB Airport", ar: "" },
+				Place: { en: "DXB Airport", ar: "مطار دبي الدولي" },
 				Image: dxb,
 			},
 			{
-				Duration: "21",
-				Place: { en: "Dubai Downtown", ar: "" },
+				Duration: "27",
+				Place: { en: "Dubai Downtown", ar: "وسط دبي" },
 				Image: downtown,
 			},
 			{
-				Duration: "20",
-				Place: { en: "Mall of Emirates", ar: "" },
-				Image: moe,
+				Duration: "23",
+				Place: { en: "Mall of Emirates", ar: "مول الامارات" },
+				Image: global,
 			},
 		],
 		Video: DubaiVideo,
