@@ -7,7 +7,7 @@ const withRoute = (routes) => {
     route.path == "*" ? (
       <Route
         path={route.path}
-        element={<route.element to="/404" replace />}
+        element={<route.element to="/park-greens" replace />}
         key={route.path}
       />
     ) : (

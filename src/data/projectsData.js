@@ -1,5 +1,4 @@
 import projectOneHeader from "../assets/images/damac.webp";
-
 import projectTwoHeader from "../assets/images/reportage.webp";
 import locationIcon from "../assets/icons/location-icon.svg";
 import percentage from "../assets/icons/down-payment.svg";
@@ -16,16 +15,28 @@ import img from "../assets/images/nearby/img.webp";
 import zayed from "../assets/images/nearby/zayed.webp";
 export const projectsData = [
   {
-    id: 1,
+    id: 0,
+    slug: "park-greens",
     ProjectName: { en: "Park Greens", ar: "بارك غرين" },
     HeaderTitle: {
       en: "Modern Villas that Blended Seamlessly with Nature At",
       ar: "فلل فخمة تمتزج مع الطبيعة بسلاسة",
     },
-    HeaderTitleHighlight: {
-      en: "Park Greens",
-      ar: "يارك غرين",
-    },
+
+    HeaderTitleHighlight: [
+      {
+        en: "Park Greens",
+        ar: "يارك غرين",
+      },
+      {
+        en: "Park Greens",
+        ar: "يارك غرين",
+      },
+      {
+        en: "Park Greens",
+        ar: "يارك غرين",
+      },
+    ],
     HeaderImage: projectOneHeader,
     InfoTitle: {
       en: "Discover Your Water Wonderland",
@@ -90,16 +101,27 @@ export const projectsData = [
     Video: DubaiVideo,
   },
   {
-    id: 2,
+    id: 1,
+    slug: "reportage-village",
     ProjectName: { en: "Reportage Village", ar: "قرية ريبورتاج" },
     HeaderTitle: {
       en: "Ready for a new living Experience at Reportage Village At",
       ar: "تجربة معيشة جديدة في قرية ريبورتاج",
     },
-    HeaderTitleHighlight: {
-      en: "Reportage Village",
-      ar: "قرية ريبورتاج",
-    },
+    HeaderTitleHighlight: [
+      {
+        en: "Reportage Village",
+        ar: "قرية ريبورتاج",
+      },
+      {
+        en: "Reportage Village",
+        ar: "قرية ريبورتاج",
+      },
+      {
+        en: "Reportage Village",
+        ar: "قرية ريبورتاج",
+      },
+    ],
     HeaderImage: projectTwoHeader,
     InfoTitle: {
       en: " Luxury Lifestyle with Close Proximity to Most of Dubai’s",

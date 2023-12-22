@@ -1,9 +1,10 @@
-import { lazy } from "react";
+import { lazy, useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 import Home from "../pages/home";
 
 export const publicRoutes = [
-  { path: "/", element: Home },
+  { path: "/park-greens", element: Home },
+  { path: "/reportage-village", element: Home },
   {
     path: "/privacy-policy",
     element: lazy(() => import("../pages/privacy/index.jsx")),
