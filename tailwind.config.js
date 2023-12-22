@@ -5,6 +5,43 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      animation: {
+        "text-slide": "text-slide 5s infinite",
+      },
+      keyframes: {
+        "text-slide": {
+          // "0%, 16%": {
+          //   transform: "translateY(0%)",
+          // },
+          // "20%, 36%": {
+          //   transform: "translateY(-16.66%)",
+          // },
+          // "40%, 56%": {
+          //   transform: "translateY(-33.33%)",
+          // },
+          // "60%, 76%": {
+          //   transform: "translateY(-50%)",
+          // },
+          // "80%, 96%": {
+          //   transform: "translateY(-66.66%)",
+          // },
+          // "100%": {
+          //   transform: "translateY(-83.33%)",
+          // },
+          "0%": {
+            transform: "translateY(0%)",
+          },
+          "25%": {
+            transform: "translateY(-25%)",
+          },
+          "50%": {
+            transform: "translateY(-50%)",
+          },
+          "100%": {
+            transform: "translateY(-75%)",
+          },
+        },
+      },
       boxShadow: {
         "top-shadow": "0px -4px 3px rgba(50, 50, 50, 0.50)",
       },

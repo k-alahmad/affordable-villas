@@ -1,8 +1,11 @@
 import React from "react";
 import { projectsData } from "../../../data/projectsData";
 import { useTranslation } from "react-i18next";
-const Header = ({ selectedProject, setSelectedProject }) => {
+import TextCarousel from "../../../components/UI/TextCarousel";
+import { useNavigate } from "react-router-dom";
+const Header = ({ selectedProject }) => {
   const { i18n } = useTranslation();
+  const navigate = useNavigate();
   return (
     <>
       <div className="pt-16 bg-primary h-[40vh]" />
@@ -14,16 +17,12 @@ const Header = ({ selectedProject, setSelectedProject }) => {
             className="rounded-lg h-full w-full object-cover origin-center"
           />
           <div className="absolute w-full h-full bg-primary/30 rounded-lg top-0 left-0" />
-          <p className="absolute left-0 w-full top-1 p-1 text-[30px] font-bold sm:text-big lg:text-[64px] text-white text-center ">
-            {projectsData[selectedProject].HeaderTitle[i18n.language]}{" "}
-            <span className="bg-secondary/70 py-1 px-2 rounded-md text-primary shadow-2xl drop-shadow-2xl">
-              {
-                projectsData[selectedProject]?.HeaderTitleHighlight[
-                  i18n.language
-                ]
-              }
-            </span>
-          </p>
+
+          <TextCarousel
+            sentance={projectsData[selectedProject].HeaderTitle[i18n.language]}
+            textArray={projectsData[selectedProject].HeaderTitleHighlight}
+          />
+
           <div className="absolute w-full bottom-0 rounded-lg left-0 bg-primary flex justify-center items-center  text-[18px] font-semibold sm:text-small ">
             {projectsData.map((item, index) => {
               return (
@@ -34,7 +33,9 @@ const Header = ({ selectedProject, setSelectedProject }) => {
                       ? "bg-secondary text-primary"
                       : " text-secondary bg-primary"
                   } transition-all duration-300`}
-                  onClick={() => setSelectedProject(index)}
+                  onClick={() => {
+                    navigate(`/${item.slug}`);
+                  }}
                 >
                   {item.ProjectName[i18n.language]}
                 </div>
